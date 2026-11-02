@@ -3,8 +3,8 @@
   "name": "自用·小群体去开屏广告",
   "version": 1,
   "author": "gyp",
-  "updateUrl": "https://raw.githubusercontent.com/<你的账号>/<你的仓库>/main/dist/gkd.json5",
-  "checkUpdateUrl": "https://raw.githubusercontent.com/<你的账号>/<你的仓库>/main/dist/gkd.json5",
+  "updateUrl": "https://fastly.jsdelivr.net/gh/jiuzheyangmi/gkd-rules@main/gkd.json",
+  "checkUpdateUrl": "https://fastly.jsdelivr.net/gh/jiuzheyangmi/gkd-rules@main/gkd.json",
   "supportUri": "https://gkd.li/",
   "categories": [],
   "globalGroups": [
