@@ -1,0 +1,59 @@
+{
+  "id": 2026110301,
+  "name": "自用·小群体去开屏广告",
+  "version": 1,
+  "author": "gyp",
+  "updateUrl": "https://raw.githubusercontent.com/<你的账号>/<你的仓库>/main/dist/gkd.json5",
+  "checkUpdateUrl": "https://raw.githubusercontent.com/<你的账号>/<你的仓库>/main/dist/gkd.json5",
+  "supportUri": "https://gkd.li/",
+  "categories": [],
+  "globalGroups": [
+    {
+      "key": 0,
+      "name": "开屏广告-通用跳过",
+      "fastQuery": true,
+      "matchTime": 10000,
+      "actionMaximum": 1,
+      "resetMatch": "app",
+      "rules": [
+        {
+          "key": 0,
+          "matches": "[text*=\"跳过\"][text.length<10][visibleToUser=true]"
+        },
+        {
+          "key": 1,
+          "matches": "[desc*=\"跳过\"][visibleToUser=true]"
+        },
+        {
+          "key": 2,
+          "matches": "[text=\"关闭广告\"][visibleToUser=true]"
+        },
+        {
+          "key": 3,
+          "matches": "[text=\"Skip\"][visibleToUser=true]"
+        }
+      ]
+    }
+  ],
+  "apps": [
+    {
+      "id": "com.zhihu.android",
+      "name": "知乎",
+      "groups": [
+        {
+          "key": 0,
+          "name": "开屏广告",
+          "rules": [
+            {
+              "key": 0,
+              "matches": "TextView[id=\"com.zhihu.android:id/btn_skip\"]",
+              "snapshotUrls": [
+                "https://i.gkd.li/i/13070251"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
